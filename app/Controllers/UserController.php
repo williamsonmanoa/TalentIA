@@ -7,11 +7,10 @@ use CodeIgniter\Controller;
 
 class UserController extends Controller
 {
-    public function index()
-    {
-        $userModel = new UserModel();
-        $data['users'] = $userModel->findAll();  // Fetch all users
-        return view('/dashboard', $data);  // Load user list view
+    public function index() {
+        $model = new UserModel();
+        $users = $model->findAll(); // Récupère tous les utilisateurs
+        return $this->response->setJSON($users); // Retourne les utilisateurs au format JSON
     }
 
     public function create()

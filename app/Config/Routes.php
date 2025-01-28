@@ -6,7 +6,7 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/dashboard', 'DashboardController::index'); // Ensure this matches your controller name
+$routes->get('/users', 'DashboardController::index'); // Ensure this matches your controller name
 $routes->get('/auth', 'Auth::index'); // The login page
 $routes->post('/auth/login', 'Auth::login'); // Process login form
 $routes->get('/auth/logout', 'Auth::logout'); // Process logout
