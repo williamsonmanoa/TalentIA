@@ -1,0 +1,338 @@
+CRITICAL - 2024-10-04 08:02:25 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 495.
+ 1 SYSTEMPATH/Filters/Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH/Filters/Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 08:02:45 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/Filters/Filters.php on line 495.
+ 1 SYSTEMPATH/Filters/Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH/Filters/Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 10:49:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(19): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 10:53:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(22): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 10:53:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/create.php"
+[Method: GET, Route: user/create]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/create.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/create', [], true)
+ 3 APPPATH/Controllers/UserController.php(28): view('user/create')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 10:55:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(33): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 10:56:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(32): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:00:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(21): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:00:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(21): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:02:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(21): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:03:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/manage.php"
+[Method: GET, Route: user/manage]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/manage.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/manage', [], true)
+ 3 APPPATH/Controllers/UserController.php(19): view('user/manage', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->manage()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:16:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:18:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:18:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/create.php"
+[Method: GET, Route: users/create]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/create.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/create', [], true)
+ 3 APPPATH/Controllers/UserController.php(33): view('user/create')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:18:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: users]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/UserController.php(19): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:18:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/create.php"
+[Method: GET, Route: users/create]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/create.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/create', [], true)
+ 3 APPPATH/Controllers/UserController.php(33): view('user/create')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:23:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:23:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: users]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/UserController.php(19): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:25:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:26:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:26:27 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(:num)4"
+[Method: GET, Route: users/edit/%28:num%294]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('users/edit/(:num)4')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('users/edit/(:num)4')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:29:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "users/edit.php"
+[Method: GET, Route: users/edit/4]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('users/edit.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('users/edit', [], true)
+ 3 APPPATH/Controllers/UserController.php(45): view('users/edit', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->edit('4')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 11:52:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: users]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/UserController.php(19): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 12:26:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/index.php"
+[Method: GET, Route: users/create]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/UserController.php(53): view('user/index')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->create()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 14:20:21 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layout/main.php on line 6.
+ 1 APPPATH/Views/layout/main.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', '/Users/williamson/Documents/Dev/talentia/app/Views/layout/main.php', 6)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/williamson/Documents/Dev/talentia/app/Views/layout/main.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('layout/main', [], true)
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/DashboardController.php(19): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-10-04 14:21:22 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layout/main.php on line 6.
+ 1 APPPATH/Views/layout/main.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', '/Users/williamson/Documents/Dev/talentia/app/Views/layout/main.php', 6)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/williamson/Documents/Dev/talentia/app/Views/layout/main.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render('layout/main', [], true)
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 6 APPPATH/Controllers/DashboardController.php(19): view('dashboard', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\DashboardController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')

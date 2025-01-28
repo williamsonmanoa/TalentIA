@@ -1,0 +1,249 @@
+ERROR - 2024-09-26 14:00:38 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#5 /Users/williamson/Documents/Dev/talentia/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#6 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\Model->insert(Array)
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#14 {main}
+CRITICAL - 2024-09-26 14:00:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("name", "email") VALUES (:name:, :email:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/UserController.php(16): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:01:13 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#5 /Users/williamson/Documents/Dev/talentia/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#6 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\Model->insert(Array)
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#14 {main}
+CRITICAL - 2024-09-26 14:01:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("name", "email") VALUES (:name:, :email:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/UserController.php(16): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:04:19 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#5 /Users/williamson/Documents/Dev/talentia/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#6 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\Model->insert(Array)
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#14 {main}
+CRITICAL - 2024-09-26 14:04:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("name", "email") VALUES (:name:, :email:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/UserController.php(16): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:06:30 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "us...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#5 /Users/williamson/Documents/Dev/talentia/system/Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#6 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(15): CodeIgniter\Model->insert(Array)
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#14 {main}
+CRITICAL - 2024-09-26 14:06:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO "users" ("name", "email") VALUES (:name:, :email:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH/Controllers/UserController.php(15): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:09:51 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#13 {main}
+CRITICAL - 2024-09-26 14:09:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:11:22 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#13 {main}
+CRITICAL - 2024-09-26 14:11:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+CRITICAL - 2024-09-26 14:23:00 --> CodeIgniter\Exceptions\ConfigException: Invalid DBDriver name: "PostgreSQL"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/Database.php on line 172.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('PostgreSQL')
+ 2 SYSTEMPATH/Database/Config.php(84): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 APPPATH/Controllers/UserController.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
+ERROR - 2024-09-26 14:28:03 --> Error connecting to the database: CodeIgniter\Database\Exceptions\DatabaseException: ERROR:  invalid value for parameter "client_encoding": "utf8mb4" in /Users/williamson/Documents/Dev/talentia/system/Database/Postgre/Connection.php:97
+Stack trace:
+#0 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(421): CodeIgniter\Database\Postgre\Connection->connect(false)
+#1 /Users/williamson/Documents/Dev/talentia/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/williamson/Documents/Dev/talentia/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#3 /Users/williamson/Documents/Dev/talentia/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/williamson/Documents/Dev/talentia/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/williamson/Documents/Dev/talentia/app/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+#6 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(933): App\Controllers\UserController->index()
+#7 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 /Users/williamson/Documents/Dev/talentia/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/williamson/Documents/Dev/talentia/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/williamson/Documents/Dev/talentia/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/williamson/Documents/Dev/talentia/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/williamson/Documents/Dev/talentia/system/rewrite.php(44): require_once('/Users/williams...')
+#13 {main}
+CRITICAL - 2024-09-26 14:28:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [Postgre]: ERROR:  invalid value for parameter "client_encoding": "utf8mb4"
+[Method: GET, Route: users]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/UserController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')

@@ -1,0 +1,23 @@
+CRITICAL - 2025-01-26 17:37:39 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): static
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/I18n/TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-26 17:38:36 --> ErrorException: Declaration of CodeIgniter\I18n\TimeTrait::createFromTimestamp(int $timestamp, $timezone = null, ?string $locale = null) must be compatible with DateTimeImmutable::createFromTimestamp(int|float $timestamp): static
+[Method: GET, Route: dashboard]
+in SYSTEMPATH/I18n/TimeTrait.php on line 268.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-26 19:41:36 --> ErrorException: Undefined variable $skill
+[Method: GET, Route: user_skills]
+in APPPATH/Views/user_skills/index.php on line 33.
+ 1 APPPATH/Views/user_skills/index.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $skill', '/Users/williamson/Documents/Dev/talentia/app/Views/user_skills/index.php', 33)
+ 2 SYSTEMPATH/View/View.php(234): include('/Users/williamson/Documents/Dev/talentia/app/Views/user_skills/index.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->{closure:CodeIgniter\View\View::render():231}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('user_skills/index', [], true)
+ 5 APPPATH/Controllers/UserSkillController.php(16): view('user_skills/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserSkillController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserSkillController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/williamson/Documents/Dev/talentia/public/index.php')
