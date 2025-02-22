@@ -16,4 +16,31 @@ class UserSkillModel extends Model
         'skill_id' => 'required|is_not_unique[skills.id]',
         'level' => 'required|in_list[beginner,intermediate,advanced,expert]',
     ];
+
+
+
+    // Mila manao requete kely
+    // Ahoana no atao
+    // Mila atao manao zero daholo aloha*
+
+    function getStats(){
+        try{
+            $query = "select * from v_stats_skil_use";
+            $query = $this->db->query($query);
+            $results = [];
+            foreach( $query->getResult() as $row ){
+                $results[] = $row;
+            }
+            return $results;
+        }catch(\Exception $e){
+            var_dump($e);
+        }
+    }
+
+
+
+
+
+
+    
 }

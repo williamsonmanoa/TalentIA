@@ -8,8 +8,6 @@ CREATE TABLE users (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-//une fonction de trigger pour mettre à jour updated_at
-
 CREATE OR REPLACE FUNCTION update_updated_at_column()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -17,8 +15,6 @@ BEGIN
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
-
-//le trigger qui applique cette fonction à chaque mise à jour de la table users
 
 CREATE TRIGGER update_user_timestamp
 BEFORE UPDATE ON users
@@ -34,7 +30,6 @@ CREATE TABLE skills (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
-//une fonction de trigger pour mettre à jour updated_at
 
 CREATE OR REPLACE FUNCTION update_skills_updated_at_column()
 RETURNS TRIGGER AS $$
@@ -43,8 +38,6 @@ BEGIN
     RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
-
-//Ce trigger exécutera la fonction update_skills_updated_at_column à chaque mise à jour sur la table skills.
 
 CREATE TRIGGER update_skills_timestamp
 BEFORE UPDATE ON skills
@@ -134,8 +127,62 @@ CREATE TABLE project_assignments (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-('Admin User', 'admin@example.com', 'root', 'admin'),
 -- Insérer des utilisateurs
 INSERT INTO users (name, email, password, role) VALUES 
+('Admin User', 'admin@example.com', 'root', 'admin'),
 ('Manager User', 'manager@example.com', 'root', 'manager'),
 ('Collaborator User', 'collab@example.com', 'root', 'collaborator');
+
+
+---------------------
+
+CREATE or replace view vue_skill_initial as
+SELECT
+    id as idSkill,
+    0 as utilisation
+FROM
+    skills;
+
+--- Okay rehefa vita ny eto 
+---- Ny ato indray mgroupe par rapport
+
+create or REPLACE view vue_user_skill_isa as
+SELECT
+    skill_id as id,
+    COUNT(*) as utilisation
+FROM
+    user_skills us
+GROUP by
+    skill_id;
+
+create or REPLACE view vue_utilisation_globale as
+SELECT
+    vsi.idSkill,
+    COALESCE( vusi.utilisation, vsi.utilisation ) as nbUtilisation
+FROM
+    vue_skill_initial vsi
+LEFT JOIN vue_user_skill_isa vusi
+    on  vsi.idSkill = vusi.id;
+
+------ Okay atao jointure sisa reo
+
+CREATE or REPLACE view v_stats_skil_use as
+SELECT
+    s.id,
+    s.name as nomSkill,
+    vug.nbutilisation
+FROM
+    vue_utilisation_globale vug
+JOIN
+    skills s on vug.idSkill = s.id;
+
+
+------ Andao anisy data
+
+insert into skills (name, category) values ( 'Java', 'Développement' );
+insert into skills (name, category) values ( 'C#', 'Développement' );
+insert into skills (name, category) values ( 'PHP', 'Développement' );
+insert into skills (name, category) values ( 'C/C++', 'Développement' );
+insert into skills (name, category) values ( 'R', 'Développement' );
+insert into skills (name, category) values ( 'Ruby on Rails', 'Développement' );
+insert into skills (name, category) values ( 'Smooth Talking', 'Communication' );

@@ -4,14 +4,15 @@ namespace App\Controllers;
 
 use App\Models\SkillModel;
 use CodeIgniter\Controller;
+use CodeIgniter\RESTful\ResourceController;
 
-class SkillController extends Controller
+class SkillController extends ResourceController
 {
     public function index()
     {
         $skillModel = new SkillModel();
-        $data['skills'] = $skillModel->findAll();  // Fetch all skills
-        return view('skills/index', $data);  // Load skill list view
+        $skills = $skillModel->findAll(); 
+        return $this->respond($skills, 200);
     }
 
     public function create()
@@ -22,7 +23,7 @@ class SkillController extends Controller
     public function store()
     {
         $skillModel = new SkillModel();
-
+        
         // Collect form data
         $data = [
             'name'     => $this->request->getPost('name'),
@@ -35,31 +36,38 @@ class SkillController extends Controller
         return redirect()->to(base_url('/skills'))->with('success', 'Skill added successfully!');
     }
 
-    public function edit($id)
-    {
+    public function save(){
+        $data = $this->request->getJSON(true);
         $skillModel = new SkillModel();
-        $data['skill'] = $skillModel->find($id);  // Find the skill by ID
-        return view('skills/edit', $data);  // Load edit form with skill data
+        $skillModel->insert($data);
+        return $this->respond(['message' => 'Successfull'], 202);
+
     }
 
-    public function update($id)
+    // public function edit($id)
+    // {
+    //     $skillModel = new SkillModel();
+    //     $data['skill'] = $skillModel->find($id);  // Find the skill by ID
+    //     return view('skills/edit', $data);  // Load edit form with skill data
+    // }
+
+    public function modify($id)
     {
         $skillModel = new SkillModel();
-
-        // Collect form data
-        $data['name']     = $this->request->getPost('name');
-        $data['category']  = $this->request->getPost('category');
-
+        $data = $this->request->getJSON(true);
         // Update skill
         $skillModel->update($id, $data);
 
-        return redirect()->to(base_url('/skills'))->with('success', 'Skill updated successfully!');
+        return $this->respond(['message' => 'Modification success']);
+
+        // return redirect()->to(base_url('/skills'))->with('success', 'Skill updated successfully!');
     }
 
-    public function delete($id)
+    public function deleteSkill($id)
     {
         $skillModel = new SkillModel();
         $skillModel->delete($id);  // Delete the skill
-        return redirect()->to(base_url('/skills'))->with('success', 'Skill deleted successfully!');
+        return $this->respond(['message' => 'Suppression success']);
+
     }
 }

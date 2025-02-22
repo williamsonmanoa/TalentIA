@@ -1,6 +1,7 @@
 import { ApexOptions } from 'apexcharts';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactApexChart from 'react-apexcharts';
+import { getStats } from '../../services/Dashboard.service';
 
 const options: ApexOptions = {
   colors: ['#3C50E0', '#80CAEE'],
@@ -90,12 +91,23 @@ const ChartTwo: React.FC = () => {
   };
   handleReset;  
 
+  useEffect(() => {
+    const fetchData = async () => {
+      let result = await getStats();
+
+      console.log(result);
+    };
+
+    fetchData();
+  }, []);
+
+
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white p-7.5 shadow-default dark:border-strokedark dark:bg-boxdark xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>
           <h4 className="text-xl font-semibold text-black dark:text-white">
-            Profit this week
+            Pourcentage des Skills Utilisées
           </h4>
         </div>
         <div>

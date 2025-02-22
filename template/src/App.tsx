@@ -16,6 +16,8 @@ import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
+import SkillCreation from './pages/Skills/SkillCreation';
+import Skills from './pages/Skills/Index';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -40,6 +42,15 @@ function App() {
             <>
               <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
               <ECommerce />
+            </>
+          }
+        />
+        <Route
+          path='/skill'
+          element={
+            <>
+              <PageTitle title="Skills | Overview " />
+              <Skills />
             </>
           }
         />

@@ -10,7 +10,7 @@ use CodeIgniter\Config\BaseConfig;
 class Cors extends BaseConfig
 {
     public array $default = [
-        'allowedOrigins' => ['http://localhost:3000'], // Permet les requêtes depuis ton frontend
+        'allowedOrigins' => ['*'], // Permet les requêtes depuis ton frontend
         'allowedOriginsPatterns' => [],
         'supportsCredentials' => false,
         'allowedHeaders' => ['Content-Type', 'Authorization'], // Autorise les en-têtes nécessaires
