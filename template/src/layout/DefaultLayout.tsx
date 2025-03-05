@@ -3,7 +3,7 @@ import Header from '../components/Header/index';
 import Sidebar from '../components/Sidebar/index';
 import { Outlet } from 'react-router-dom';
 
-const DefaultLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
+const DefaultLayout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (

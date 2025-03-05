@@ -38,6 +38,18 @@ function App() {
     <Routes>
 
       <Route
+          index
+          element={
+            <>
+              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+              {/* <ECommerce /> */}
+              <SignIn />
+            </>
+          }
+        />
+
+      {/* Anaty template */}
+      <Route
         element={<DefaultLayout />}
       >
         <Route
