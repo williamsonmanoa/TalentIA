@@ -34,17 +34,12 @@ function App() {
   return loading ? (
     <Loader />
   ) : (
-    <DefaultLayout>
-      <Routes>
-        <Route
-          index
-          element={
-            <>
-              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-              <ECommerce />
-            </>
-          }
-        />
+
+    <Routes>
+
+      <Route
+        element={<DefaultLayout />}
+      >
         <Route
           path='/skill'
           element={
@@ -153,8 +148,30 @@ function App() {
             </>
           }
         />
-      </Routes>
-    </DefaultLayout>
+
+      </Route>
+
+
+    </Routes>
+
+
+
+
+    // <DefaultLayout>
+    //   <Routes>
+    //     <Route
+    //       index
+    //       element={
+    //         <>
+    //           <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+    //           {/* <ECommerce /> */}
+    //           <SignIn />
+    //         </>
+    //       }
+    //     />
+        
+    //   </Routes>
+    // </DefaultLayout>
   );
 }
 
