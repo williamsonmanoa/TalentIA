@@ -54,7 +54,7 @@ $routes->group('api', function($routes) {
         $response->setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
         return $response;
     });
-    $routes->get('users', 'UserController::index');
+    $routes->post('login', 'Auth::login');
     $routes->get('projects', 'ProjectController::index');
     $routes->group('stats', function($routes){
         $routes->get('user_skills', 'UserSkillController::getStatsSkills');

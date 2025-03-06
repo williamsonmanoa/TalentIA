@@ -1,10 +1,69 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import LogoDark from '../../images/logo/logo-dark.svg';
 import Logo from '../../images/logo/logo.svg';
+import { LogIn } from '../../services/auth.service';
 
 const SignIn: React.FC = () => {
+
+  const[error, setError] = useState<string|null>(null);
+  const navigate = useNavigate();
+  
+  const signIn = async (event) => {
+
+    event.preventDefault();
+
+
+    const formData = new FormData(event.target);
+    const data = {
+      "mail" : formData.get('mail'),
+      "password" : formData.get('password')
+    };
+
+    
+    
+    const loginResponse = await LogIn(data);
+
+
+
+    if( loginResponse.status <= 300 ){
+      const uuid = crypto.randomUUID();
+      const uuidExpiryTime = new Date(Date.now() + 360000);
+      const dataExpiry = {
+        uid: uuid,
+        expire: uuidExpiryTime
+      };
+
+      sessionStorage.setItem("mock-token", JSON.stringify(dataExpiry));
+
+      // redirect to home route
+      console.log("jejjejejejejje");
+      setError(null);
+      navigate("/skill");
+
+    }
+    else if(  loginResponse.status >= 400){
+      setError(loginResponse.data.message);
+    }
+
+
+  };
+
+  useEffect(()=>{
+
+    // console.log('trerertrrr');
+
+    return () => {
+      // setError("");
+    }
+
+  }, [error]);
+
+  // Okay inona no eto
+  // mila avadika zavatra hafa ny eto
+  // asiana resaka state
+
   return (
     <>
       {/* <Breadcrumb pageName="Sign In" /> */}
@@ -153,13 +212,14 @@ const SignIn: React.FC = () => {
                 Se connecter
               </h2>
 
-              <form>
+              <form onSubmit={(event) => signIn(event)}>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
                     Email
                   </label>
                   <div className="relative">
                     <input
+                      name='mail'
                       type="email"
                       placeholder="Enter your email"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
@@ -191,6 +251,7 @@ const SignIn: React.FC = () => {
                   </label>
                   <div className="relative">
                     <input
+                      name='password'
                       type="password"
                       placeholder="Your password"
                       className="w-full rounded-lg border border-stroke bg-transparent py-4 pl-6 pr-10 text-black outline-none focus:border-primary focus-visible:shadow-none dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
@@ -219,6 +280,10 @@ const SignIn: React.FC = () => {
                     </span>
                   </div>
                 </div>
+
+                { error && <p className='text-red-600 font-bold'>
+                    { error }
+                </p> }
 
                 <div className="mb-5">
                   <input
