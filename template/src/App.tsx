@@ -53,6 +53,15 @@ function App() {
         element={<DefaultLayout />}
       >
         <Route
+          path='/dashboard'
+          element={
+            <>
+              <PageTitle title="Dashboard | Overview " />
+              <ECommerce />
+            </>
+          }
+        />
+        <Route
           path='/skill'
           element={
             <>
