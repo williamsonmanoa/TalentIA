@@ -55,7 +55,6 @@ $routes->group('api', function($routes) {
         return $response;
     });
     $routes->post('login', 'Auth::login');
-    $routes->get('projects', 'ProjectController::index');
     $routes->group('stats', function($routes){
         $routes->get('user_skills', 'UserSkillController::getStatsSkills');
     });
@@ -64,6 +63,12 @@ $routes->group('api', function($routes) {
         $routes->post('/', 'SkillController::save');
         $routes->put('(:num)', 'SkillController::modify/$1');
         $routes->delete('(:num)', 'SkillController::deleteSkill/$1');
+    });
+    $routes->group('projects', function($routes){
+        $routes->get('/', 'ProjectController::index');
+        $routes->post('/', 'ProjectController::save');
+        $routes->put('(:num)', 'ProjectController::modify/$1');
+        $routes->delete('(:num)', 'ProjectController::deleteSkill/$1');
     });
 });
 
