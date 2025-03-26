@@ -186,3 +186,21 @@ insert into skills (name, category) values ( 'C/C++', 'Développement' );
 insert into skills (name, category) values ( 'R', 'Développement' );
 insert into skills (name, category) values ( 'Ruby on Rails', 'Développement' );
 insert into skills (name, category) values ( 'Smooth Talking', 'Communication' );
+
+
+
+create or REPLACE view info_projet as
+SELECT
+    p.id as id,
+    p.name as nomProjet,
+    p.description,
+    s.id as idSkill,
+    s.name as nomSkill,
+    s.category,
+    ps.required_level
+FROM
+    project_skills ps
+JOIN
+    projects p on ps.project_id = p.id
+JOIN
+    skills s on ps.skill_id = s.id;

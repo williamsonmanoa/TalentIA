@@ -10,7 +10,7 @@ const SignIn: React.FC = () => {
   const[error, setError] = useState<string|null>(null);
   const navigate = useNavigate();
   
-  const signIn = async (event) => {
+  const signIn = async (event : any) => {
 
     event.preventDefault();
 
@@ -37,8 +37,6 @@ const SignIn: React.FC = () => {
 
       sessionStorage.setItem("mock-token", JSON.stringify(dataExpiry));
 
-      // redirect to home route
-      console.log("jejjejejejejje");
       setError(null);
       navigate("/skill");
 

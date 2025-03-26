@@ -15,6 +15,24 @@ class ProjectModel extends Model{
         'name' => 'required|max_length[255]',
         'description' => 'max_length[100]',
     ];
+
+
+    function getActiveSkills($idProjet){
+        // mila dinihana le requete
+        $sqlActive = "
+            select 
+                * 
+            from 
+                info_projet ip
+            left join
+                skills s
+            on ip.idSkill = s.id
+            where 
+                ip.id = 3
+            and
+        ";
+    }
+
 }
 
 

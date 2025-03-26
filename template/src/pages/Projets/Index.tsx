@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb";
 import ProjetCreation from "./ProjetCreation";
-import SkillList from "./ProjetList";
+import ProjetList from "./ProjetList";
 import { Projet } from "../../types/projet";
 
 const Projects = () => {
@@ -45,7 +45,7 @@ const Projects = () => {
                     <ProjetCreation reload={reloadCreation} toUpdateData={updateData} isUpdate={launchUpdate} reloadTrigger={reloadDownload} />
                 </div>
                 <div className="flex flex-col gap-9">
-                    <SkillList reload={reload} enableUpdate={enableUpdate} />
+                    <ProjetList reload={reload} enableUpdate={enableUpdate} />
                 </div>
             </div>
         </>

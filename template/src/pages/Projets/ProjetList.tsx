@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Projet } from "../../types/projet";
 import { deleteProject, getProjects } from "../../services/projects.service";
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 interface ProjetListProps{
     reload: boolean;
@@ -12,6 +13,8 @@ const ProjetList = ( {reload, enableUpdate} : ProjetListProps ) => {
 
     const [data, setData] = useState<Projet[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(false);
+    const navigate = useNavigate();
+
 
     const updateSkill = (key: any) => {
         const skill: Projet | undefined = data.find(skills => skills.id === key);
@@ -75,15 +78,17 @@ const ProjetList = ( {reload, enableUpdate} : ProjetListProps ) => {
                     <div className="col-span-1 flex items-center">
                         <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
                         <p 
-                            onClick={ () => updateSkill(product.id) }
+                            onClick={ () => navigate('/fiche') }
                             className="text-sm text-yellow-500 cursor-pointer"
-                        >
+                        >   
                             {product.id}
                         </p>
                         </div>
                     </div>
                     <div className="col-span-3 hidden items-center sm:flex">
-                        <p className="text-sm text-black dark:text-white">
+                        <p className="text-sm text-black dark:text-white"
+                            onClick={ () => updateSkill(product.id) }
+                        >
                         {product.name}
                         </p>
                     </div>

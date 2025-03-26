@@ -42,6 +42,11 @@ class ProjectController extends ResourceController {
     }
 
 
+    public function recupererDataProjets($id){
+
+    }
+
+
 }
 
 
