@@ -41,11 +41,28 @@ class ProjectController extends ResourceController {
 
     }
 
-
-    public function recupererDataProjets($id){
-
+    public function addTechDataToProject( $id ){
+        $data = $this->request->getJSON(true);
+        var_dump($data);
+        // tokony hoe ny data tonga = 
+        /**
+         * 
+         * project_id
+         * skill_id
+         * personnes_requis
+         * niveau id
+         * 
+         */
+        // Okay rehefa azo eto ito de mila mamorona resaka table ampidirana anzareo
+        $prj = new ProjectModel();
+        $prj->addTechDataToProject( $id, $data );
+        return $this->respond(['message' => 'Technologies ajoutée'], 200);
     }
 
+    public function getStacksForProject( $id ){
+        $projectData = (new ProjectModel())->getProjectWithStacks($id);
+        return $this->respond(['skills' => $projectData], 200);
+    }
 
 }
 

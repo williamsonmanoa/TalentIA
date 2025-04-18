@@ -33,6 +33,33 @@ class ProjectModel extends Model{
         ";
     }
 
+
+    function addTechDataToProject( $idProjet, $otherData ){
+        try{
+            $sql = "insert into project_skills(project_id, skill_id, required_level, effectif, descriptions) values ( ?, ?, ?, ?, ?)";
+    
+            $this->db->query($sql, [ 
+                $this->db->escapeString(''.$idProjet),
+                $this->db->escapeString(''.$otherData['skill_id']),
+                $this->db->escapeString(''.$otherData['required_level']),
+                $this->db->escapeString(''.$otherData['effectif']),
+                $this->db->escapeString(''.$otherData['descriptions']),
+            ]);
+
+        }catch(\Exception $e){
+            echo $e->getMessage();
+        }
+
+    }
+
+    function getProjectWithStacks( $idProjet ){
+        return $this->db->table('project_skills')
+        ->join('skills', 'project_skills.skill_id = skills.id')
+        ->where('project_skills.project_id', $idProjet)
+        ->get()
+        ->getResult();
+    }
+
 }
 
 

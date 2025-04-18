@@ -69,6 +69,8 @@ $routes->group('api', function($routes) {
         $routes->post('/', 'ProjectController::save');
         $routes->put('(:num)', 'ProjectController::modify/$1');
         $routes->delete('(:num)', 'ProjectController::deleteSkill/$1');
+        $routes->post('(:num)/add-detail-stack', 'ProjectController::addTechDataToProject/$1');
+        $routes->get('(:num)/get-detail-stack', 'ProjectController::getStacksForProject/$1');
     });
 });
 

@@ -204,3 +204,22 @@ JOIN
     projects p on ps.project_id = p.id
 JOIN
     skills s on ps.skill_id = s.id;
+
+
+create table niveau(
+
+    id serial PRIMARY KEY,
+    codeNiveau VARCHAR(100) unique,
+    descriptionNiveau VARCHAR(255)
+
+);
+
+
+insert into niveau (codeNiveau, descriptionNiveau) values ('Junior', 'Junior');
+insert into niveau (codeNiveau, descriptionNiveau) values ('Sénior', 'Sénior');
+insert into niveau (codeNiveau, descriptionNiveau) values ('Expert', 'Expert');
+
+
+
+alter table project_skills add column descriptions varchar(255);
+alter table project_skills add column effectif int;
